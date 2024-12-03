@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Table } from 'react-bootstrap';
+import Adduser from '../Components/Adduser';
+import Edituser from '../Components/Edituser';
 
 function Usermngment() {
     return (
@@ -18,9 +20,7 @@ function Usermngment() {
                                 <Card.Text className="fs-5">
                                     Quickly create a new user and assign them a role.
                                 </Card.Text>
-                                <Button variant="light" className="btn-rounded px-4 text-primary fw-bold">
-                                    Add New User
-                                </Button>
+                               <Adduser/>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -49,9 +49,7 @@ function Usermngment() {
                                             <td>johndoe@example.com</td>
                                             <td>Admin</td>
                                             <td>
-                                                <Button variant="warning" size="sm" className="mx-1 btn-sm-rounded">
-                                                    <i className="fas fa-edit"></i> Edit
-                                                </Button>
+                                                <Edituser/>
                                                 <Button variant="danger" size="sm" className="mx-1 btn-sm-rounded">
                                                     <i className="fas fa-trash-alt"></i> Delete
                                                 </Button>
@@ -63,9 +61,7 @@ function Usermngment() {
                                             <td>janesmith@example.com</td>
                                             <td>User</td>
                                             <td>
-                                                <Button variant="warning" size="sm" className="mx-1 btn-sm-rounded">
-                                                    <i className="fas fa-edit"></i> Edit
-                                                </Button>
+                                                <Edituser/>
                                                 <Button variant="danger" size="sm" className="mx-1 btn-sm-rounded">
                                                     <i className="fas fa-trash-alt"></i> Delete
                                                 </Button>

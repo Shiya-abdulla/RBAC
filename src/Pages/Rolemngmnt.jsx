@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Table } from 'react-bootstrap';
+import Addrole from '../Components/Addrole';
 
 function Rolemngmnt() {
   return (
@@ -21,9 +22,7 @@ function Rolemngmnt() {
                 <Card.Text className="fs-5">
                   Create new roles and assign permissions to users.
                 </Card.Text>
-                <Button variant="light" className="btn-rounded px-4 text-success fw-bold">
-                  Add New Role
-                </Button>
+                <Addrole/>
               </Card.Body>
             </Card>
           </Col>
